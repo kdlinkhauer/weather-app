@@ -20,7 +20,7 @@ app.use(express.urlencoded({
 
 app.route('/')
   .get((req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.render('home');
   })
   .post((req, res) => {
     const apiKey = process.env.API_KEY;
@@ -28,19 +28,22 @@ app.route('/')
     const unit = "imperial"
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + unit
     https.get(url, function(response) {
-      console.log(response.statusCode);
-
       response.on("data", function(data) {
         const weatherData = JSON.parse(data);
-        const temp = weatherData.main.temp;
+        const temp = Math.round(weatherData.main.temp);
+        const feelsLike = Math.round(weatherData.main.feels_like);
         const description = weatherData.weather[0].description;
         const icon = weatherData.weather[0].icon;
         const imgURL = 'http://openweathermap.org/img/wn/' + icon + '@2x.png'
-        res.write("<h1>The temperature in " + _.startCase(query) + " is " + temp + " degrees Fahrenheit.</h1>")
-        res.write("<h3>The weather is currently " + description + ".</h3>")
-        res.write("<img src=" + imgURL + ">");
-        res.send();
-      })
+
+        res.render('weather', {
+          temp: temp,
+          city: _.startCase(query),
+          description: description,
+          feelsLike: feelsLike,
+          imgURL: imgURL
+        });
+      });
     });
   })
 

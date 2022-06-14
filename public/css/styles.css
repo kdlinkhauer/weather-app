@@ -1,9 +1,9 @@
 body {
-  background-image: url("public\images\7d6d566fe751a5e927eec4c4fa0c221e.jpg");
+  background-image: url("/images/background.jpg");
   /* The image used */
   background-color: #2B52A6;
   /* Used if the image is unavailable */
-  height: 500px;
+  height: 800px;
   /* You must set a specified height */
   background-position: center;
   /* Center the image */
@@ -15,8 +15,25 @@ body {
 
 h1 {
   font-family: 'Joan', serif;
+  color: #fff;
+  font-size: 5em;
 }
 
 p {
   font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.main {
+  padding: 10% 0;
+}
+
+.footer {
+  padding: 2% 0;
 }
