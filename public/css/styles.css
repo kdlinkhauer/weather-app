@@ -1,0 +1,22 @@
+body {
+  background-image: url("public\images\7d6d566fe751a5e927eec4c4fa0c221e.jpg");
+  /* The image used */
+  background-color: #2B52A6;
+  /* Used if the image is unavailable */
+  height: 500px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+h1 {
+  font-family: 'Joan', serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
