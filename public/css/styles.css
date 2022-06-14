@@ -43,12 +43,12 @@ footer {
   border-radius: 4px;
   box-sizing: border-box;
 }*/
-button[type=submit] {
+.yButton {
   background-color: #FFE69A;
   color: black;
 }
 
-button[type=submit]:hover {
+.yButton:hover {
   background-color: #FFD24C;
 }
 
