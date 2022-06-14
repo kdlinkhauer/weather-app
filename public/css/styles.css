@@ -1,22 +1,13 @@
 body {
-  background-image: url("/images/background.jpg");
-  /* The image used */
-  background-color: #2B52A6;
-  /* Used if the image is unavailable */
-  height: 800px;
-  /* You must set a specified height */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
+  background-image: linear-gradient(#0061A8, #8AB6D6);
+  background-attachment: fixed;
 }
 
 h1 {
   font-family: 'Joan', serif;
   color: #fff;
   font-size: 5em;
+  margin-bottom: 5%;
 }
 
 p {
@@ -26,14 +17,41 @@ p {
 
 .center {
   margin: auto;
-  width: 50%;
+}
+
+main {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.main {
-  padding: 10% 0;
+footer {
+  width: 90%;
 }
 
-.footer {
-  padding: 2% 0;
+/* Form */
+/* input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}*/
+button[type=submit] {
+  background-color: #FFE69A;
+  color: black;
+}
+
+button[type=submit]:hover {
+  background-color: #FFD24C;
+}
+
+.input-group {
+  width: 50%;
 }

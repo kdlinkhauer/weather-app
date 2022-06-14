@@ -1,9 +1,11 @@
 <%- include('partials/header'); -%>
-<div class="center main">
-  <h1>Hey, what's the weather?</h1>
-  <form action="/" method="post">
-    <input id="cityInput" type="text" name="cityName" placeholder="City Name">
-    <button type="submit">Let's check!</button>
-  </form>
-</div>
+
+<h1>Hey, how's the weather?</h1>
+<form action="/" method="post">
+  <div class="input-group mb-3 center">
+    <input id="cityInput" name="cityName" type="text" class="form-control form-control-lg" placeholder="City Name" aria-label="City Name" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Let's check!</button>
+  </div>
+</form>
+
 <%- include('partials/footer'); -%>
