@@ -134,8 +134,8 @@ This is an example of how to list things you need to use the software and how to
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] update input for more specific location requests
-- [ ] add error message and redirect to the beginning
+- [x] update input for more specific location requests
+- [x] add error message and redirect to the beginning
 - [ ] allow user to select either Fahrenheit or Celsius
 
 See the [open issues](https://github.com/kdlinkhauer/weather-app/issues) for a full list of proposed features (and known issues).
