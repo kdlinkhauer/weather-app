@@ -174,7 +174,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@iamlinkhs](https://twitter.com/iamlinkhs) - kdlinkhauer@gmail.com
+KD Linkhauer
 
 Project Link: [https://github.com/kdlinkhauer/weather-app](https://github.com/kdlinkhauer/weather-app)
 
