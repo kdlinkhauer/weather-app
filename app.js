@@ -23,26 +23,35 @@ app.route('/')
     res.render('home');
   })
   .post((req, res) => {
+    // variables (location, units)
     const apiKey = process.env.API_KEY;
-    const query = req.body.cityName;
+    const city = req.body.cityName;
+    const state = req.body.stateName;
+    const country = req.body.countryName;
     const unit = "imperial"
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + unit
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${state},${country}&appid=${apiKey}&units=${unit}`
+
     https.get(url, function(response) {
       response.on("data", function(data) {
-        const weatherData = JSON.parse(data);
-        const temp = Math.round(weatherData.main.temp);
-        const feelsLike = Math.round(weatherData.main.feels_like);
-        const description = weatherData.weather[0].description;
-        const icon = weatherData.weather[0].icon;
-        const imgURL = 'http://openweathermap.org/img/wn/' + icon + '@2x.png'
 
-        res.render('weather', {
-          temp: temp,
-          city: _.startCase(query),
-          description: description,
-          feelsLike: feelsLike,
-          imgURL: imgURL
-        });
+        const weatherData = JSON.parse(data);
+        if (weatherData.cod === "404") {
+          res.render('error');
+        } else {
+          const temp = Math.round(weatherData.main.temp);
+          const feelsLike = Math.round(weatherData.main.feels_like);
+          const description = weatherData.weather[0].description;
+          const icon = weatherData.weather[0].icon;
+          const imgURL = `http://openweathermap.org/img/wn/${icon}@2x.png`
+
+          res.render('weather', {
+            temp: temp,
+            city: _.startCase(city),
+            description: description,
+            feelsLike: feelsLike,
+            imgURL: imgURL
+          });
+        }
       });
     });
   })
@@ -50,5 +59,5 @@ app.route('/')
 
 
 app.listen(port, function() {
-  console.log("Server is running on port 3000.");
+  console.log(`Server is running on port ${port}.`);
 });
