@@ -29,9 +29,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/kdlinkhauer/weather-app">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
 <h3 align="center">KD's Weather App</h3>
 
