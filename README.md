@@ -29,9 +29,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/kdlinkhauer/weather-app">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
 <h3 align="center">KD's Weather App</h3>
 
@@ -81,8 +78,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<div align="center">
+  <a href="https://vast-sea-74081.herokuapp.com/">
+    <img src="KDWeatherApp.png" alt="KD's Weather App">
+  </a>
+  </div>
 
-[![KDWeatherApp.png][KD's Weather App]](https://vast-sea-74081.herokuapp.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
