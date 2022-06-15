@@ -1,8 +1,10 @@
+/* background */
 body {
   background-image: linear-gradient(#0061A8, #8AB6D6);
   background-attachment: fixed;
 }
 
+/* text */
 h1 {
   font-family: 'Joan', serif;
   color: #fff;
@@ -33,16 +35,7 @@ footer {
   width: 90%;
 }
 
-/* Form */
-/* input[type=text], select {
-  width: 50%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}*/
+/* button and form */
 .yButton {
   background-color: #FFE69A;
   color: black;
