@@ -136,7 +136,8 @@ This is an example of how to list things you need to use the software and how to
 
 - [x] update input for more specific location requests
 - [x] add error message and redirect to the beginning
-- [ ] allow user to select either Fahrenheit or Celsius
+- [x] allow user to select either Fahrenheit or Celsius
+- [ ] add unit indicator back on weather.ejs
 
 See the [open issues](https://github.com/kdlinkhauer/weather-app/issues) for a full list of proposed features (and known issues).
 
@@ -173,8 +174,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
-KD Linkhauer
 
 Project Link: [https://github.com/kdlinkhauer/weather-app](https://github.com/kdlinkhauer/weather-app)
 

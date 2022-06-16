@@ -23,12 +23,13 @@ app.route('/')
     res.render('home');
   })
   .post((req, res) => {
+    console.log(req.body.units);
     // variables (location, units)
     const apiKey = process.env.API_KEY;
     const city = req.body.cityName;
     const state = req.body.stateName;
     const country = req.body.countryName;
-    const unit = "imperial"
+    const unit = req.body.units;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${state},${country}&appid=${apiKey}&units=${unit}`
 
     https.get(url, function(response) {
@@ -38,6 +39,7 @@ app.route('/')
         if (weatherData.cod === "404") {
           res.render('error');
         } else {
+          // choosing f or c
           const temp = Math.round(weatherData.main.temp);
           const feelsLike = Math.round(weatherData.main.feels_like);
           const description = weatherData.weather[0].description;
