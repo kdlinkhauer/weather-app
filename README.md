@@ -79,9 +79,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <div align="center">
-  <a href="https://vast-sea-74081.herokuapp.com/">
     <img src="KDWeatherApp.png" alt="KD's Weather App">
-  </a>
   </div>
 
 
