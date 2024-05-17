@@ -38,7 +38,7 @@
     <a href="https://github.com/kdlinkhauer/weather-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/kdlinkhauer/weather-app">View Demo</a>
+    <a href="https://weather-app-oh0f.onrender.com/">View Demo</a>
     ·
     <a href="https://github.com/kdlinkhauer/weather-app/issues">Report Bug</a>
     ·
@@ -79,7 +79,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <div align="center">
-    <img src="KDWeatherApp.png" alt="KD's Weather App">
+    <a href="https://weather-app-oh0f.onrender.com/"><img src="weather-app.png" alt="KD's Weather App"></a>
   </div>
 
 
